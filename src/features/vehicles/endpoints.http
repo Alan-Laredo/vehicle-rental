@@ -1,0 +1,17 @@
+// #region Vehicles
+GET http://localhost:3010/vehicles
+
+###
+GET http://localhost:3010/vehicles/5e60181449c98b27488c6fa5
+
+###
+POST http://localhost:3010/vehicles
+Content-Type: application/json
+
+{
+    "model": 3,
+    "year": "2020",
+    "vehicles_available": 50
+}
+
+// #endregion

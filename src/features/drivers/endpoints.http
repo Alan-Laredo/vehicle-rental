@@ -1,0 +1,32 @@
+// #region Drivers
+GET http://localhost:3010/drivers
+
+###
+GET http://localhost:3010/drivers?filter=age&value=25
+
+###
+GET http://localhost:3010/drivers?filter=driver_license
+
+###
+GET http://localhost:3010/drivers?value=2
+
+###
+POST http://localhost:3010/drivers
+Content-Type: application/json
+
+{
+    "age": 28,
+    "first_name": "req.body.first_name",
+    "last_name": "req.body.last_name",
+    "driver_license": "req.body.driver_license"
+}
+
+// #endregion
+###
+// #region Vehicles
+GET http://localhost:3010/drivers/5e5fe72a0a651e4b44f15ca0/vehicles
+
+###
+GET http://localhost:3010/drivers/5e5fe72a0a651e4b44f15ca0/vehicles/5e60213b54a61a49488354fd
+
+// #endregion
